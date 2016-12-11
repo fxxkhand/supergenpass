@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html manifest="cache.manifest">
 
 	<head>
@@ -27,7 +27,7 @@
 		<link rel="alternate" lang="ru" hreflang="ru" title="ру́сский" href="?ru">
 
 		<!-- See unminified CSS at https://github.com/chriszarate/supergenpass -->
-		<link rel="stylesheet" href="../../build/mobile.min.css" inline="true">
+		<link rel="stylesheet" href="build/mobile.min.css" inline="true">
 
 		<title>SGP</title>
 
@@ -47,7 +47,7 @@
 
 			<div id="Update">Updated bookmarklet: <a id="Bookmarklet" href="#">SGP</a></div>
 
-			<form action="#" novalidate="novalidate">
+			<form action="#" novalidate="novalidate" autocomplete="off">
 
 				<fieldset id="PasswdField">
 					<input id="Passwd" type="password" placeholder="Master password">
@@ -86,11 +86,10 @@
 					<div id="Generate" class="Field Button">Generate</div>
 
 					<div id="Mask">
-						<div id="CopyButton" class="Field Button" data-clipboard-target="Output"></div>
+						<div id="CopyButton" class="Field Button"></div>
 						<div id="MaskText" class="Field Button">**************</div>
+						<div id="Output" class="Field"></div>
 					</div>
-
-					<div id="Output" class="Field"></div>
 
 				</div>
 
@@ -99,7 +98,7 @@
 		</div>
 
 		<!-- See unminified JS at https://github.com/chriszarate/supergenpass -->
-		<script src="../../build/mobile.min.js" inline="true"></script>
+		<script src="build/mobile.min.js" inline="true"></script>
 
 	</body>
 
